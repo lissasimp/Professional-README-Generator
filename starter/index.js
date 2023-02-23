@@ -4,7 +4,7 @@ const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown");
 
 
-   const userInput = [
+inquirer.prompt ([
       {
         type: 'input',
         message: 'What is your Github user name?',
@@ -57,28 +57,32 @@ const generateMarkdown = require("./utils/generateMarkdown");
         message: 'How can a user contribute towards this project/repo?',
         name: 'contribute',
       },
-    ]
+    ])
+    .then((data) => {
+      fs.writeFile('README.md', generateMarkdown(data), (err) => err ? console.log(err) : console.log("README has been generated")
+      );
+    })
 
 
     
 
 
-// function to write 
-  function writeToFile (filename, data) {
-    return fs.writeFileSync(path.join(process.cwd(), filename), data);
-  };
+// // function to write 
+//   function writeToFile (filename, data) {
+    
+//   };
 
 
-// function to initialize program
-function init() {
-inquirer.prompt(userInput). then((response) => {
-  console.log("Creating README.md");
-  writeToFile("README.md", generateMarkdown({response}));
-});
-}
+// // function to initialize program
+// function init() {
+// inquirer.prompt(userInput). then((response) => {
+//   console.log("Creating README.md");
+//   writeToFile("README.md", generateMarkdown({response}));
+// });
+// }
 
-// function call to initialize program
-init();
+// // function call to initialize program
+// init();
 
 // GNU General Public License v2.0 [![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
 // GNU Lesser General Public License v3 [![License: LGPL v3](https://img.shields.io/badge/License-LGPL_v3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0)
