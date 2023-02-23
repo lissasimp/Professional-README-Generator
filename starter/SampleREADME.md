@@ -4,7 +4,7 @@
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 ## Description
-This is a README generator created with nodejs and inquirer. 
+A README generator created using nodejs and inquirer 
 
 ## Table of Contents
  
@@ -16,16 +16,16 @@ This is a README generator created with nodejs and inquirer.
 - [Questions](#Questions)
 
 ## Installation
-  npm init -y, npm install 
+  npm init-y, npm install 
 
 ## Usage
-  npm modules (inquirer, generateMarkdown) 
+  npm modules 
 
 ## License
 Terms and conditions for use, reproduction, and distribution can be found here: (https://opensource.org/licenses/MIT) 
 
 ## Contributing
-  Check for bugs and let creator know 
+  Check for bugs 
 
 ## Tests
 

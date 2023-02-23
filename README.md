@@ -29,13 +29,17 @@ In this Challenge, you'll build a command-line application that dynamically gene
 
 
 ## Usage
-- 
+- GitHub Rep https://github.com/lissasimp/Professional-README-Generator
 
-![Weather dashboard showing search input; current weather/5 day forecast](./assets/Screenshot.PNG)
+![Screenshot of user input questions](./assets/screenshot.PNG)
 
 ## Credits
 The following websites were used to support this project:
-- 
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator
+- https://stackoverflow.com/questions/67013842/trying-to-place-license-badge-within-readme-md-using-node-js-but-getting-error-a
+- https://www.youtube.com/watch?v=NCwa_xi0Uuc
+- https://ianrufus.com/blog/2019/09/node-cli-inquirer/
 
 
 ## License
