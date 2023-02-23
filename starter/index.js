@@ -1,8 +1,10 @@
+//required packages
 const fs = require("fs");
 const path = require("path");
 const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown");
 
+//user prompts
 inquirer
   .prompt([
     {
@@ -37,8 +39,8 @@ inquirer
         "ApacheLicense2",
         "GNUv3",
         "MIT",
-        'BSDSimplified',
-        'BSD3Clause',
+        "BSDSimplified",
+        "BSD3Clause",
         "BoostSoftwareLicense1",
         "CreativeCommonsZerov1",
         "EclipsePublicLicense2",
@@ -46,7 +48,8 @@ inquirer
         "GNUGPL2",
         "GNULGPL3",
         "Mozilla2",
-        "TheUnlicense"],
+        "TheUnlicense",
+      ],
       name: "license",
     },
     {
@@ -65,8 +68,9 @@ inquirer
       name: "contribute",
     },
   ])
+
+  //create README.md
   .then((data) => {
-    
     fs.writeFile("README.md", generateMarkdown(data), (err) =>
       err ? console.log(err) : console.log("README has been generated")
     );
