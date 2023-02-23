@@ -71,7 +71,7 @@ inquirer
 
   //create README.md
   .then((data) => {
-    fs.writeFile("README.md", generateMarkdown(data), (err) =>
+    fs.writeFile("SampleREADME.md", generateMarkdown(data), (err) =>
       err ? console.log(err) : console.log("README has been generated")
     );
   });
